@@ -9,7 +9,7 @@
 		<meta name="author" content="name">
     <meta name="description" content="description here">
 		<meta name="keywords" content="keywords,here">
-		<link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> <!--Replace with your tailwind.css once created-->
+		<link href="css/tailwind.min.css" rel="stylesheet"> <!--Replace with your tailwind.css once created-->
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 <style>
 body {font-family: 'Noto Sans JP', sans-serif;}
@@ -34,7 +34,7 @@ body {font-family: 'Noto Sans JP', sans-serif;}
 		<div class="flex items-center flex-shrink-0 text-white mr-6">
 			<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
 				<a href="index.html">	<span class="text-2xl pl-2"><i class="em em-grinning"></i> MoiSuomi</span></a>
-			
+			</a>
 		</div>
 
 		<div class="block lg:hidden">
@@ -78,7 +78,7 @@ body {font-family: 'Noto Sans JP', sans-serif;}
 					<div class="flex h-full bg-white rounded overflow-hidden shadow-lg flex flex-wrap no-underline hover:no-underline">
 						<div class="w-full md:w-2/3 rounded-t">	
 							<div class="iframe-container">
-							<iframe width="490" height="315" src="https://www.youtube.com/embed/cM78vHEqxY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+							<!--<iframe width="490" height="315" src="https://www.youtube.com/embed/cM78vHEqxY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
 						</div>
 					</div>
 						<div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
@@ -109,7 +109,7 @@ body {font-family: 'Noto Sans JP', sans-serif;}
 					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
 						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
 							<div class="iframe-container">
-							<iframe width="360" height="200" src="https://www.youtube.com/embed/bWtbxFaMr-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+							<!--<iframe width="360" height="200" src="https://www.youtube.com/embed/bWtbxFaMr-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
 						</div>
 							<p class="w-full text-gray-600 text-xs md:text-sm px-6">マッティくんが教える</p>
 								<div class="w-full font-bold text-xl text-gray-900 px-6 mb-5">フィンランド語㊙会話術</div>
@@ -127,7 +127,7 @@ body {font-family: 'Noto Sans JP', sans-serif;}
 					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
 						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
 							<div class="iframe-container">
-							<iframe width="360" height="200" src="https://www.youtube.com/embed/qLBAZPIbSs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+							<!--<iframe width="360" height="200" src="https://www.youtube.com/embed/qLBAZPIbSs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
 						</div>
 							<p class="w-full text-gray-600 text-xs md:text-sm px-6">フィンランド記事</p>
 								<div class="w-full font-bold text-xl text-gray-900 px-6 mb-5">～SuomiLifeスオミライフ～
@@ -147,7 +147,7 @@ body {font-family: 'Noto Sans JP', sans-serif;}
 					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
 						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
 							<div class="iframe-container">
-							<iframe width="360" height="200" src="https://www.youtube.com/embed/9chPEI-_KPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+							<!--<iframe width="360" height="200" src="https://www.youtube.com/embed/9chPEI-_KPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
 						</div>
 							<p class="w-full text-gray-600 text-xs md:text-sm px-6">個人ブログ</p>
 								<div class="w-full  font-bold text-xl text-gray-900 px-6 mb-5">ボビー君のフィンランド語学習日記</div>
@@ -166,8 +166,12 @@ body {font-family: 'Noto Sans JP', sans-serif;}
 					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
 						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
 							<a class="flex flex-wrap no-underline hover:no-underline">
-								<img src="img\Optimized-matti2.webp" class="h-full w-full pb-6" alt="profile-image">
-								<p class="w-full text-gray-600 text-xs md:text-sm px-6">プロフィール</p>
+                <picture>
+                  <source srcset="img\Optimized-matti2.webp">
+                  <source srcset="img\Optimized-matti2.webp">
+                  <img src="img\Optimized-matti2.webp" class="h-full w-full pb-6" alt="profile-image">
+                </picture>
+                <p class="w-full text-gray-600 text-xs md:text-sm px-6">プロフィール</p>
 								<div class="w-full font-bold text-xl text-gray-900 px-6 mb-5">Mattiくん（マッティくん）</div>
 								<p class="text-gray-800 Noto Sans JP', sans-serif text-base px-6 mb-5">
 									大阪の福島で生まれたフィンランドと日本の自然大好き釣りバカハ－フ。
@@ -186,8 +190,12 @@ body {font-family: 'Noto Sans JP', sans-serif;}
 					<!--1/2 col -->
 					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
 						<div class="flex-1 flex-row bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-							<a class="flex flex-wrap no-underline hover:no-underline">	
-								<img src="img\Optimized-bob2.webp" class="h-full w-full rounded-t pb-6" alt="profile-image">
+							<a class="flex flex-wrap no-underline hover:no-underline">
+                <picture>
+                  <source srcset="img\Optimized-bob2.webp">
+                  <source srcset="img\Optimized-bob2.webp">
+                  <img src="img\Optimized-bob2.webp" class="h-full w-full rounded-t pb-6" alt="profile-image">
+                </picture>
 								<p class="w-full text-gray-600 text-xs md:text-sm px-6">プロフィール</p>
 								<div class="w-full font-bold text-xl text-gray-900 px-6 mb-5">Bobii Yukiくん</div>
 								<p class="text-gray-800 Noto Sans JP', sans-serif text-base px-6 mb-5">
